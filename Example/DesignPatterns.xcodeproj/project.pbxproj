@@ -23,6 +23,9 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9A1DF30622F016D30009488C /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DF30422F016D30009488C /* ChasingGame.m */; };
+		9A5608F622F0402C00465590 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F522F0402C00465590 /* Character.m */; };
+		9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F822F0405800465590 /* CharacterBuilder.m */; };
+		9A5608FC22F05CC700465590 /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,12 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A1DF30422F016D30009488C /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
 		9A1DF30522F016D30009488C /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		9A5608F422F0402C00465590 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		9A5608F522F0402C00465590 /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		9A5608F722F0405800465590 /* CharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		9A5608F822F0405800465590 /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		9A5608FA22F05CC700465590 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +203,12 @@
 			children = (
 				9A1DF30522F016D30009488C /* ChasingGame.h */,
 				9A1DF30422F016D30009488C /* ChasingGame.m */,
+				9A5608F422F0402C00465590 /* Character.h */,
+				9A5608F522F0402C00465590 /* Character.m */,
+				9A5608F722F0405800465590 /* CharacterBuilder.h */,
+				9A5608F822F0405800465590 /* CharacterBuilder.m */,
+				9A5608FA22F05CC700465590 /* StandardCharacterBuilder.h */,
+				9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */,
 			);
 			path = "生成器";
 			sourceTree = "<group>";
@@ -359,9 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
+				9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */,
+				9A5608F622F0402C00465590 /* Character.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A1DF30622F016D30009488C /* ChasingGame.m in Sources */,
+				9A5608FC22F05CC700465590 /* StandardCharacterBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
