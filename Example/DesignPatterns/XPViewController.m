@@ -8,6 +8,10 @@
 
 #import "XPViewController.h"
 
+// 单利
+#import "XPWann.h"
+
+// 生成器
 #import "ChasingGame.h"
 #import "Character.h"
 #import "CharacterBuilder.h"
@@ -31,6 +35,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark 单利
+
+- (void)sharedInstance {
+    [XPWann sharedInstance];
 }
 
 #pragma mark 生成器模式

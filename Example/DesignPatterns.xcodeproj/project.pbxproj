@@ -26,6 +26,7 @@
 		9A5608F622F0402C00465590 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F522F0402C00465590 /* Character.m */; };
 		9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F822F0405800465590 /* CharacterBuilder.m */; };
 		9A5608FC22F05CC700465590 /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */; };
+		9A95A5EA22F079610048870C /* XPWann.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5E922F079610048870C /* XPWann.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		9A5608F822F0405800465590 /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
 		9A5608FA22F05CC700465590 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
 		9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		9A95A5E822F079610048870C /* XPWann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPWann.h; sourceTree = "<group>"; };
+		9A95A5E922F079610048870C /* XPWann.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPWann.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +152,7 @@
 				6003F5A5195388D20070C39A /* XPViewController.h */,
 				6003F5A6195388D20070C39A /* XPViewController.m */,
 				9A1DF30322F0162E0009488C /* 生成器 */,
+				9A95A5E722F079610048870C /* 单利 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -211,6 +215,15 @@
 				9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */,
 			);
 			path = "生成器";
+			sourceTree = "<group>";
+		};
+		9A95A5E722F079610048870C /* 单利 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A5E822F079610048870C /* XPWann.h */,
+				9A95A5E922F079610048870C /* XPWann.m */,
+			);
+			path = "单利";
 			sourceTree = "<group>";
 		};
 		E25EED18D9061280036FF302 /* Pods */ = {
@@ -375,6 +388,7 @@
 			files = (
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
 				9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */,
+				9A95A5EA22F079610048870C /* XPWann.m in Sources */,
 				9A5608F622F0402C00465590 /* Character.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
