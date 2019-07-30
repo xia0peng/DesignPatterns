@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9A1DF30622F016D30009488C /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DF30422F016D30009488C /* ChasingGame.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +63,9 @@
 		6AB8402B84FA4A946F1879A2 /* Pods-DesignPatterns_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		796ED1C5CC9CAEEE9DCAD358 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9A1DF30422F016D30009488C /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
+		9A1DF30522F016D30009488C /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,11 +137,9 @@
 			children = (
 				6003F59C195388D20070C39A /* XPAppDelegate.h */,
 				6003F59D195388D20070C39A /* XPAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XPViewController.h */,
 				6003F5A6195388D20070C39A /* XPViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				9A1DF30322F0162E0009488C /* 生成器 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -148,6 +149,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F595195388D20070C39A /* DesignPatterns-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -185,6 +189,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9A1DF30322F0162E0009488C /* 生成器 */ = {
+			isa = PBXGroup;
+			children = (
+				9A1DF30522F016D30009488C /* ChasingGame.h */,
+				9A1DF30422F016D30009488C /* ChasingGame.m */,
+			);
+			path = "生成器";
+			sourceTree = "<group>";
+		};
 		E25EED18D9061280036FF302 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +220,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				DE0CB20E1FDB455B79247BE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,24 +351,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE0CB20E1FDB455B79247BE7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesignPatterns_Example/Pods-DesignPatterns_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DesignPatterns/DesignPatterns.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DesignPatterns.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignPatterns_Example/Pods-DesignPatterns_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -367,6 +361,7 @@
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9A1DF30622F016D30009488C /* ChasingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
