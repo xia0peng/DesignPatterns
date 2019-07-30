@@ -21,6 +21,7 @@
         // 用 super 不能用 self
         // 1.因为当重写了 allocWithZone 方法时，如果这里用的是 self 调用的话，当对象第一次初始化时会产生循环调用。
         // 2.因为已经在 self 中重载了基本的对象分配方法，所以需要借用其父类的功能来帮助处理底层内存分配的杂物。
+        // 在 Cocoa Touch 框架中，调用类的 allocWithZone:(NSZone *)zone 方法，会分配实例的内存，引用计数会置为 1，然后会返回实例。其实，alloc 是用设为 NULL 的 zone 来调用 allocWithZone：，在默认区域（zone）为新实力分配内存。
         instance = [[super allocWithZone:NULL] init];
     });
     

@@ -17,6 +17,9 @@
 #import "CharacterBuilder.h"
 #import "StandardCharacterBuilder.h"
 
+// 适配器
+#import "SetStrokeColorCommand.h"
+
 @interface XPViewController ()
 
 @end
@@ -29,6 +32,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self builder];
+    
+    [self adapter];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,13 +42,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark 单利
+#pragma mark - 单利
 
 - (void)sharedInstance {
     [XPWann sharedInstance];
 }
 
-#pragma mark 生成器模式
+#pragma mark - 生成器模式
 
 - (void)builder {
     
@@ -55,6 +60,13 @@
     Character *enemy = [game createEnemy:characterBuilder];
     
     NSLog(@"%@%@",player,enemy);
+}
+
+#pragma mark - 适配器
+
+- (void)adapter {
+    SetStrokeColorCommand *command = [SetStrokeColorCommand new];
+    [command execute];
 }
 
 @end
