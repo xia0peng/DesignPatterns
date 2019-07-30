@@ -9,10 +9,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Character.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class Character;
 
 @interface CharacterBuilder : NSObject
 

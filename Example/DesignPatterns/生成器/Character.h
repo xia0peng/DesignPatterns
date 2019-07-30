@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) float agility;        // 敏捷
 @property (nonatomic, assign) float aggressiveness; // 攻击力
 
+@property (nonatomic, assign) float protection; // 防御值
+@property (nonatomic, assign) float power;      // 攻击力
+
 @end
 
 NS_ASSUME_NONNULL_END

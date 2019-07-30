@@ -21,6 +21,9 @@
         self.intelligence = 1.0;
         self.agility = 1.0;
         self.aggressiveness = 1.0;
+        
+        self.protection = 1.0;
+        self.power = 1.0;
     }
     return self;
 }

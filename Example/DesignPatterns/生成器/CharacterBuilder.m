@@ -7,7 +7,6 @@
 //
 
 #import "CharacterBuilder.h"
-#import "Character.h"
 
 @implementation CharacterBuilder
 
