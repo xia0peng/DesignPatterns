@@ -1,0 +1,16 @@
+PODS:
+  - DesignPatterns (0.1.0)
+
+DEPENDENCIES:
+  - DesignPatterns (from `../`)
+
+EXTERNAL SOURCES:
+  DesignPatterns:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DesignPatterns: 4d3fa38abc0dc9e1cd9bd42beb8dc169e4ac2780
+
+PODFILE CHECKSUM: 8daf009168d933c17067b82098b696140bf84233
+
+COCOAPODS: 1.7.4
