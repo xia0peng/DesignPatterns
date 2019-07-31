@@ -32,6 +32,9 @@
 		9A95A5F122F08EDA0048870C /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5F022F08EDA0048870C /* CommandSlider.m */; };
 		9A95A5F422F08FB40048870C /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5F322F08FB40048870C /* PaletteViewController.m */; };
 		9A95A5F722F090080048870C /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5F622F090080048870C /* SetStrokeColorCommand.m */; };
+		9A95A5FC22F1E9190048870C /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5FB22F1E9190048870C /* Vertex.m */; };
+		9A95A89922F1EB560048870C /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A89822F1EB560048870C /* Dot.m */; };
+		9A95A89C22F1EBFF0048870C /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A89B22F1EBFF0048870C /* Stroke.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +95,13 @@
 		9A95A5F322F08FB40048870C /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 		9A95A5F522F090080048870C /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
 		9A95A5F622F090080048870C /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		9A95A5F922F1E7260048870C /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		9A95A5FA22F1E9190048870C /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		9A95A5FB22F1E9190048870C /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		9A95A89722F1EB560048870C /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		9A95A89822F1EB560048870C /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		9A95A89A22F1EBFF0048870C /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		9A95A89B22F1EBFF0048870C /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +184,7 @@
 				9A56090022F120AC00465590 /* 外观 */,
 				9A56090122F120AC00465590 /* 中介者 */,
 				9A5608FF22F120AC00465590 /* 观察者 */,
+				9A95A5F822F1E70F0048870C /* 组合 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -303,6 +314,20 @@
 				9A95A5F022F08EDA0048870C /* CommandSlider.m */,
 			);
 			path = "适配器";
+			sourceTree = "<group>";
+		};
+		9A95A5F822F1E70F0048870C /* 组合 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A5F922F1E7260048870C /* Mark.h */,
+				9A95A5FA22F1E9190048870C /* Vertex.h */,
+				9A95A5FB22F1E9190048870C /* Vertex.m */,
+				9A95A89722F1EB560048870C /* Dot.h */,
+				9A95A89822F1EB560048870C /* Dot.m */,
+				9A95A89A22F1EBFF0048870C /* Stroke.h */,
+				9A95A89B22F1EBFF0048870C /* Stroke.m */,
+			);
+			path = "组合";
 			sourceTree = "<group>";
 		};
 		E25EED18D9061280036FF302 /* Pods */ = {
@@ -466,7 +491,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A95A5F722F090080048870C /* SetStrokeColorCommand.m in Sources */,
+				9A95A5FC22F1E9190048870C /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
+				9A95A89922F1EB560048870C /* Dot.m in Sources */,
 				9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */,
 				9A95A5EA22F079610048870C /* XPWann.m in Sources */,
 				9A5608F622F0402C00465590 /* Character.m in Sources */,
@@ -474,6 +501,7 @@
 				9A95A5F422F08FB40048870C /* PaletteViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A1DF30622F016D30009488C /* ChasingGame.m in Sources */,
+				9A95A89C22F1EBFF0048870C /* Stroke.m in Sources */,
 				9A6E0C4722F192B50039789F /* ConsoleCommands.h in Sources */,
 				9A95A5EE22F08D5B0048870C /* Command.m in Sources */,
 				9A95A5F122F08EDA0048870C /* CommandSlider.m in Sources */,

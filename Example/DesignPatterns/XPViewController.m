@@ -20,6 +20,11 @@
 // 适配器
 #import "SetStrokeColorCommand.h"
 
+// 组合
+#import "Dot.h"
+#import "Vertex.h"
+#import "Stroke.h"
+
 @interface XPViewController ()
 
 @end
@@ -67,6 +72,28 @@
 - (void)adapter {
     SetStrokeColorCommand *command = [SetStrokeColorCommand new];
     [command execute];
+}
+
+#pragma mark - 抽象集合
+
+#pragma mark - 组合
+
+- (void)composize {
+    
+    // 获得对象抽象的树形表示（部分-整体层次结构）
+    // 客户端统一处理组合结构中的所有对象
+    
+    Dot *newDat = [[Dot alloc] init];
+    Stroke *parentStroke = [[Stroke alloc] init];
+    
+    [parentStroke addMark:newDat];
+    
+    Vertex *newVertex = [[Vertex alloc] init];
+    Stroke *newStroke = [[Stroke alloc] init];
+    
+    [newStroke addMark:newVertex];
+    
+    [parentStroke addMark:newStroke];
 }
 
 @end
