@@ -26,6 +26,7 @@
 		9A5608F622F0402C00465590 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F522F0402C00465590 /* Character.m */; };
 		9A5608F922F0405800465590 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608F822F0405800465590 /* CharacterBuilder.m */; };
 		9A5608FC22F05CC700465590 /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */; };
+		9A6E0C4722F192B50039789F /* ConsoleCommands.h in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C4622F192B50039789F /* ConsoleCommands.h */; };
 		9A95A5EA22F079610048870C /* XPWann.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5E922F079610048870C /* XPWann.m */; };
 		9A95A5EE22F08D5B0048870C /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5ED22F08D5B0048870C /* Command.m */; };
 		9A95A5F122F08EDA0048870C /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A5F022F08EDA0048870C /* CommandSlider.m */; };
@@ -80,6 +81,7 @@
 		9A5608F822F0405800465590 /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
 		9A5608FA22F05CC700465590 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
 		9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		9A6E0C4622F192B50039789F /* ConsoleCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleCommands.h; sourceTree = "<group>"; };
 		9A95A5E822F079610048870C /* XPWann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPWann.h; sourceTree = "<group>"; };
 		9A95A5E922F079610048870C /* XPWann.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPWann.m; sourceTree = "<group>"; };
 		9A95A5EC22F08D5B0048870C /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
@@ -163,9 +165,15 @@
 				6003F59D195388D20070C39A /* XPAppDelegate.m */,
 				6003F5A5195388D20070C39A /* XPViewController.h */,
 				6003F5A6195388D20070C39A /* XPViewController.m */,
+				9A5608FE22F120AC00465590 /* 工厂 */,
+				9A56090222F120AC00465590 /* 抽象工厂 */,
 				9A1DF30322F0162E0009488C /* 生成器 */,
 				9A95A5E722F079610048870C /* 单利 */,
 				9A95A5EB22F08B110048870C /* 适配器 */,
+				9A5608FD22F120AC00465590 /* 桥接 */,
+				9A56090022F120AC00465590 /* 外观 */,
+				9A56090122F120AC00465590 /* 中介者 */,
+				9A5608FF22F120AC00465590 /* 观察者 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -228,6 +236,49 @@
 				9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */,
 			);
 			path = "生成器";
+			sourceTree = "<group>";
+		};
+		9A5608FD22F120AC00465590 /* 桥接 */ = {
+			isa = PBXGroup;
+			children = (
+				9A6E0C4622F192B50039789F /* ConsoleCommands.h */,
+			);
+			path = "桥接";
+			sourceTree = "<group>";
+		};
+		9A5608FE22F120AC00465590 /* 工厂 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "工厂";
+			sourceTree = "<group>";
+		};
+		9A5608FF22F120AC00465590 /* 观察者 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "观察者";
+			sourceTree = "<group>";
+		};
+		9A56090022F120AC00465590 /* 外观 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "外观";
+			sourceTree = "<group>";
+		};
+		9A56090122F120AC00465590 /* 中介者 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "中介者";
+			sourceTree = "<group>";
+		};
+		9A56090222F120AC00465590 /* 抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "抽象工厂";
 			sourceTree = "<group>";
 		};
 		9A95A5E722F079610048870C /* 单利 */ = {
@@ -423,6 +474,7 @@
 				9A95A5F422F08FB40048870C /* PaletteViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A1DF30622F016D30009488C /* ChasingGame.m in Sources */,
+				9A6E0C4722F192B50039789F /* ConsoleCommands.h in Sources */,
 				9A95A5EE22F08D5B0048870C /* Command.m in Sources */,
 				9A95A5F122F08EDA0048870C /* CommandSlider.m in Sources */,
 				9A5608FC22F05CC700465590 /* StandardCharacterBuilder.m in Sources */,
