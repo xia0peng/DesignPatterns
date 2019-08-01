@@ -78,10 +78,12 @@
 
 #pragma mark - 组合
 
+/*
+* 获得对象抽象的树形表示（部分-整体层次结构）
+* 客户端统一处理组合结构中的所有对象
+*/
+
 - (void)composize {
-    
-    // 获得对象抽象的树形表示（部分-整体层次结构）
-    // 客户端统一处理组合结构中的所有对象
     
     Dot *newDat = [[Dot alloc] init];
     Stroke *parentStroke = [[Stroke alloc] init];
@@ -95,5 +97,13 @@
     
     [parentStroke addMark:newStroke];
 }
+
+#pragma mark - 迭代器
+
+/*
+ * 需要访问组合对象的内容，而又不暴露其内部表示
+ * 需要通过多种方式遍历组合对象
+ * 需要提供一个统一接口，用来遍历各种类型的组合对象
+ */
 
 @end
