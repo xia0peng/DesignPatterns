@@ -25,6 +25,10 @@
 #import "Vertex.h"
 #import "Stroke.h"
 
+// 迭代器
+#import "XPIteratorStroke.h"
+#import "XPMarkEnumerator.h"
+
 @interface XPViewController ()
 
 @end
@@ -39,6 +43,8 @@
     [self builder];
     
     [self adapter];
+    
+    [self iterator];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,5 +111,26 @@
  * 需要通过多种方式遍历组合对象
  * 需要提供一个统一接口，用来遍历各种类型的组合对象
  */
+
+- (void)iterator {
+    XPIteratorStroke *stroke = [XPIteratorStroke new];
+    [stroke addMark:stroke];
+    [stroke addMark:stroke];
+    [stroke addMark:stroke];
+
+    //
+    NSEnumerator *enumerator = [stroke enumerator];
+    
+    id <XPIteratorMark> childMark;
+    // 获取下一个需要遍历的元素
+    while (childMark = [enumerator nextObject]) {
+        NSLog(@"--%@", childMark);
+    }
+    
+    //
+    [stroke enumerateMarksUsingBlock:^(id<XPIteratorMark>  _Nonnull item, BOOL * _Nonnull stop) {
+        NSLog(@"--%@",item);
+    }];
+}
 
 @end

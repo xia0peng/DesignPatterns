@@ -34,6 +34,9 @@
 		9A6CD4D122F7F7D2004F090B /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4CB22F7F7D2004F090B /* Dot.m */; };
 		9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4CE22F7F7D2004F090B /* Vertex.m */; };
 		9A6CD4D322F7F7D2004F090B /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4D022F7F7D2004F090B /* Stroke.m */; };
+		9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4D822F7FBEF004F090B /* XPMarkEnumerator.m */; };
+		9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4DB22F800C4004F090B /* NSMutableArray+Stack.m */; };
+		9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7D122F85841004F090B /* XPIteratorStroke.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +104,14 @@
 		9A6CD4CE22F7F7D2004F090B /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		9A6CD4CF22F7F7D2004F090B /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		9A6CD4D022F7F7D2004F090B /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		9A6CD4D622F7FAC2004F090B /* XPIteratorMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPIteratorMark.h; sourceTree = "<group>"; };
+		9A6CD4D722F7FBEF004F090B /* XPMarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPMarkEnumerator.h; sourceTree = "<group>"; };
+		9A6CD4D822F7FBEF004F090B /* XPMarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPMarkEnumerator.m; sourceTree = "<group>"; };
+		9A6CD4DA22F800C4004F090B /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		9A6CD4DB22F800C4004F090B /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		9A6CD7D022F85841004F090B /* XPIteratorStroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPIteratorStroke.h; sourceTree = "<group>"; };
+		9A6CD7D122F85841004F090B /* XPIteratorStroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPIteratorStroke.m; sourceTree = "<group>"; };
+		9A6CD7D422F859AA004F090B /* XPMarkEnumerator+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPMarkEnumerator+Private.h"; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6CD4C922F7F7D2004F090B /* 组合 */,
-				9A6CD4C822F7F7D2004F090B /* 迭代器 */,
+				9A6CD4D522F7FAC2004F090B /* 迭代器 */,
 			);
 			path = "抽象集合";
 			sourceTree = "<group>";
@@ -380,25 +391,33 @@
 			path = "中介者";
 			sourceTree = "<group>";
 		};
-		9A6CD4C822F7F7D2004F090B /* 迭代器 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "迭代器";
-			sourceTree = "<group>";
-		};
 		9A6CD4C922F7F7D2004F090B /* 组合 */ = {
 			isa = PBXGroup;
 			children = (
-				9A6CD4CA22F7F7D2004F090B /* Vertex.h */,
-				9A6CD4CB22F7F7D2004F090B /* Dot.m */,
 				9A6CD4CC22F7F7D2004F090B /* Mark.h */,
-				9A6CD4CD22F7F7D2004F090B /* Stroke.h */,
+				9A6CD4CA22F7F7D2004F090B /* Vertex.h */,
 				9A6CD4CE22F7F7D2004F090B /* Vertex.m */,
 				9A6CD4CF22F7F7D2004F090B /* Dot.h */,
+				9A6CD4CB22F7F7D2004F090B /* Dot.m */,
+				9A6CD4CD22F7F7D2004F090B /* Stroke.h */,
 				9A6CD4D022F7F7D2004F090B /* Stroke.m */,
 			);
 			path = "组合";
+			sourceTree = "<group>";
+		};
+		9A6CD4D522F7FAC2004F090B /* 迭代器 */ = {
+			isa = PBXGroup;
+			children = (
+				9A6CD4D622F7FAC2004F090B /* XPIteratorMark.h */,
+				9A6CD4D722F7FBEF004F090B /* XPMarkEnumerator.h */,
+				9A6CD4D822F7FBEF004F090B /* XPMarkEnumerator.m */,
+				9A6CD7D422F859AA004F090B /* XPMarkEnumerator+Private.h */,
+				9A6CD4DA22F800C4004F090B /* NSMutableArray+Stack.h */,
+				9A6CD4DB22F800C4004F090B /* NSMutableArray+Stack.m */,
+				9A6CD7D022F85841004F090B /* XPIteratorStroke.h */,
+				9A6CD7D122F85841004F090B /* XPIteratorStroke.m */,
+			);
+			path = "迭代器";
 			sourceTree = "<group>";
 		};
 		E25EED18D9061280036FF302 /* Pods */ = {
@@ -563,12 +582,15 @@
 			files = (
 				9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
+				9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */,
 				9A6CD4AF22F7F6BE004F090B /* ChasingGame.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
+				9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A6CD4C222F7F717004F090B /* CommandSlider.m in Sources */,
 				9A6CD4D122F7F7D2004F090B /* Dot.m in Sources */,
 				9A6CD4C022F7F717004F090B /* Command.m in Sources */,
+				9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */,
 				9A6CD4C322F7F717004F090B /* PaletteViewController.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
