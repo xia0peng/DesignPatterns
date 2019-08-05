@@ -84,7 +84,6 @@
 		9A5608F822F0405800465590 /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
 		9A5608FA22F05CC700465590 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
 		9A5608FB22F05CC700465590 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
-		9A6CD48E22F7E629004F090B /* IteratorMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorMark.h; sourceTree = "<group>"; };
 		9A6E0C4622F192B50039789F /* ConsoleCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleCommands.h; sourceTree = "<group>"; };
 		9A95A5E822F079610048870C /* XPWann.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPWann.h; sourceTree = "<group>"; };
 		9A95A5E922F079610048870C /* XPWann.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPWann.m; sourceTree = "<group>"; };
@@ -176,25 +175,16 @@
 				6003F59D195388D20070C39A /* XPAppDelegate.m */,
 				6003F5A5195388D20070C39A /* XPViewController.h */,
 				6003F5A6195388D20070C39A /* XPViewController.m */,
-				9A6CD48F22F7E6FE004F090B /* 对象创建 */,
 				9A5608FE22F120AC00465590 /* 工厂 */,
 				9A56090222F120AC00465590 /* 抽象工厂 */,
 				9A1DF30322F0162E0009488C /* 生成器 */,
 				9A95A5E722F079610048870C /* 单利 */,
-				9A6CD49022F7E726004F090B /* 接口适配 */,
 				9A95A5EB22F08B110048870C /* 适配器 */,
 				9A5608FD22F120AC00465590 /* 桥接 */,
 				9A56090022F120AC00465590 /* 外观 */,
-				9A6CD49122F7E771004F090B /* 对象去耦 */,
 				9A56090122F120AC00465590 /* 中介者 */,
 				9A5608FF22F120AC00465590 /* 观察者 */,
-				9A6CD49222F7E79A004F090B /* 抽象集合 */,
 				9A95A5F822F1E70F0048870C /* 组合 */,
-				9A6CD48C22F7E531004F090B /* 迭代器 */,
-				9A6CD49622F7E833004F090B /* 行为扩展 */,
-				9A6CD49522F7E818004F090B /* 算法封装 */,
-				9A6CD49422F7E818004F090B /* 性能与对象访问 */,
-				9A6CD49322F7E7F8004F090B /* 对象状态 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -300,70 +290,6 @@
 			children = (
 			);
 			path = "抽象工厂";
-			sourceTree = "<group>";
-		};
-		9A6CD48C22F7E531004F090B /* 迭代器 */ = {
-			isa = PBXGroup;
-			children = (
-				9A6CD48E22F7E629004F090B /* IteratorMark.h */,
-			);
-			path = "迭代器";
-			sourceTree = "<group>";
-		};
-		9A6CD48F22F7E6FE004F090B /* 对象创建 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "对象创建";
-			sourceTree = "<group>";
-		};
-		9A6CD49022F7E726004F090B /* 接口适配 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "接口适配";
-			sourceTree = "<group>";
-		};
-		9A6CD49122F7E771004F090B /* 对象去耦 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "对象去耦";
-			sourceTree = "<group>";
-		};
-		9A6CD49222F7E79A004F090B /* 抽象集合 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "抽象集合";
-			sourceTree = "<group>";
-		};
-		9A6CD49322F7E7F8004F090B /* 对象状态 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "对象状态";
-			sourceTree = "<group>";
-		};
-		9A6CD49422F7E818004F090B /* 性能与对象访问 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "性能与对象访问";
-			sourceTree = "<group>";
-		};
-		9A6CD49522F7E818004F090B /* 算法封装 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "算法封装";
-			sourceTree = "<group>";
-		};
-		9A6CD49622F7E833004F090B /* 行为扩展 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "行为扩展";
 			sourceTree = "<group>";
 		};
 		9A95A5E722F079610048870C /* 单利 */ = {
