@@ -13,4 +13,8 @@
 @synthesize color;
 @synthesize size;
 
+- (void) acceptMarkVisitor:(id <MarkVisitor>)visitor {
+    [visitor visitDot:self];
+}
+
 @end

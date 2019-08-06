@@ -68,4 +68,13 @@
     return self.children.count;
 }
 
+- (void) acceptMarkVisitor:(id <MarkVisitor>)visitor {
+    for (id <Mark> dot in self.children)
+    {
+        [dot acceptMarkVisitor:visitor];
+    }
+    
+    [visitor visitStroke:self];
+}
+
 @end

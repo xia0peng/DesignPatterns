@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MarkVisitor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) addMark:(id <Mark>) mark;
 - (void) removeMark:(id <Mark>) mark;
 - (id <Mark>) childMarkAtIndex:(NSUInteger) index;
+
+// for the Visitor pattern
+// 如果把这些操作都放在 Mark 接口，那么就需要同时修改每个节点类
+- (void) acceptMarkVisitor:(id <MarkVisitor>) visitor;
 
 @end
 

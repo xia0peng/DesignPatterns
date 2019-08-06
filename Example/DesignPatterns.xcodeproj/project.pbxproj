@@ -37,6 +37,10 @@
 		9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4D822F7FBEF004F090B /* XPMarkEnumerator.m */; };
 		9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD4DB22F800C4004F090B /* NSMutableArray+Stack.m */; };
 		9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7D122F85841004F090B /* XPIteratorStroke.m */; };
+		9A6CD7D922F876DA004F090B /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7D822F876DA004F090B /* MarkRenderer.m */; };
+		9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7DB22F87AF7004F090B /* CanvasView.m */; };
+		9A6CD7E422F90F91004F090B /* UIImage+ImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7E322F90F91004F090B /* UIImage+ImageComponent.m */; };
+		9A6CD7E722F90FE0004F090B /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7E622F90FE0004F090B /* ImageFilter.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +116,16 @@
 		9A6CD7D022F85841004F090B /* XPIteratorStroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPIteratorStroke.h; sourceTree = "<group>"; };
 		9A6CD7D122F85841004F090B /* XPIteratorStroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPIteratorStroke.m; sourceTree = "<group>"; };
 		9A6CD7D422F859AA004F090B /* XPMarkEnumerator+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPMarkEnumerator+Private.h"; sourceTree = "<group>"; };
+		9A6CD7D622F8766F004F090B /* MarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		9A6CD7D722F876DA004F090B /* MarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		9A6CD7D822F876DA004F090B /* MarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
+		9A6CD7DA22F87AF7004F090B /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		9A6CD7DB22F87AF7004F090B /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		9A6CD7DF22F90E1D004F090B /* ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		9A6CD7E222F90F91004F090B /* UIImage+ImageComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageComponent.h"; sourceTree = "<group>"; };
+		9A6CD7E322F90F91004F090B /* UIImage+ImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageComponent.m"; sourceTree = "<group>"; };
+		9A6CD7E522F90FE0004F090B /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		9A6CD7E622F90FE0004F090B /* ImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +268,8 @@
 		9A6CD49C22F7F53F004F090B /* 行为扩展 */ = {
 			isa = PBXGroup;
 			children = (
+				9A6CD7D522F8764D004F090B /* 访问者 */,
+				9A6CD7DE22F90B51004F090B /* 装饰 */,
 			);
 			path = "行为扩展";
 			sourceTree = "<group>";
@@ -420,6 +436,30 @@
 			path = "迭代器";
 			sourceTree = "<group>";
 		};
+		9A6CD7D522F8764D004F090B /* 访问者 */ = {
+			isa = PBXGroup;
+			children = (
+				9A6CD7D622F8766F004F090B /* MarkVisitor.h */,
+				9A6CD7D722F876DA004F090B /* MarkRenderer.h */,
+				9A6CD7D822F876DA004F090B /* MarkRenderer.m */,
+				9A6CD7DA22F87AF7004F090B /* CanvasView.h */,
+				9A6CD7DB22F87AF7004F090B /* CanvasView.m */,
+			);
+			path = "访问者";
+			sourceTree = "<group>";
+		};
+		9A6CD7DE22F90B51004F090B /* 装饰 */ = {
+			isa = PBXGroup;
+			children = (
+				9A6CD7DF22F90E1D004F090B /* ImageComponent.h */,
+				9A6CD7E222F90F91004F090B /* UIImage+ImageComponent.h */,
+				9A6CD7E322F90F91004F090B /* UIImage+ImageComponent.m */,
+				9A6CD7E522F90FE0004F090B /* ImageFilter.h */,
+				9A6CD7E622F90FE0004F090B /* ImageFilter.m */,
+			);
+			path = "装饰";
+			sourceTree = "<group>";
+		};
 		E25EED18D9061280036FF302 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6CD7E422F90F91004F090B /* UIImage+ImageComponent.m in Sources */,
 				9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
 				9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */,
@@ -589,10 +630,13 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A6CD4C222F7F717004F090B /* CommandSlider.m in Sources */,
 				9A6CD4D122F7F7D2004F090B /* Dot.m in Sources */,
+				9A6CD7D922F876DA004F090B /* MarkRenderer.m in Sources */,
 				9A6CD4C022F7F717004F090B /* Command.m in Sources */,
 				9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */,
+				9A6CD7E722F90FE0004F090B /* ImageFilter.m in Sources */,
 				9A6CD4C322F7F717004F090B /* PaletteViewController.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
+				9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */,
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,

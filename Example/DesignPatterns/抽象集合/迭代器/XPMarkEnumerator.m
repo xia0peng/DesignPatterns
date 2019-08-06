@@ -42,6 +42,8 @@
     NSUInteger index = [mark count];
     id <XPIteratorMark> childMark;
     
+    // TODO: bug
+    
     while (childMark == [mark childMarkAtIndex:--index]) {
         [self traverseAndBuildStackWithMark:childMark];
     }

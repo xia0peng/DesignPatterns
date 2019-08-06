@@ -29,6 +29,9 @@
 #import "XPIteratorStroke.h"
 #import "XPMarkEnumerator.h"
 
+// 访问者
+#import "CanvasView.h"
+
 @interface XPViewController ()
 
 @end
@@ -45,6 +48,8 @@
     [self adapter];
     
     [self iterator];
+    
+    [self visitor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -131,6 +136,28 @@
     [stroke enumerateMarksUsingBlock:^(id<XPIteratorMark>  _Nonnull item, BOOL * _Nonnull stop) {
         NSLog(@"--%@",item);
     }];
+}
+
+#pragma mark - 行为扩展
+
+#pragma mark - 访问者
+
+/*
+ * 一个复杂的对象结构包含很多其他对象，他们有不同的接口（比如组合体），但是想对这些对象实施一些依赖于其具体类型的操作
+ *需要对一个组合结构中的对象进行很多不相关的操作，但是不想让这些操作污染这些对象的类。可以将相关操作集中起来，定义在一个访问者类中，并在需要在访问者中定义的操作时使用他
+ *定义复杂结构的类很少做修改，但经常需要向其添加新操作
+ */
+
+- (void)visitor {
+    Stroke *stroke = [Stroke new];
+    stroke.color = [UIColor redColor];
+    stroke.size = 10;
+    stroke.location = self.view.center;
+    
+    CGRect aFrame = CGRectMake(100, 100, 100, 100);
+    CanvasView *aCanvasView = [[CanvasView alloc] initWithFrame:aFrame];
+    aCanvasView.mark = stroke;
+    [self.view addSubview:aCanvasView];
 }
 
 @end

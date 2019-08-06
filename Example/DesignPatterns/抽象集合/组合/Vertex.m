@@ -22,4 +22,8 @@
     return self;
 }
 
+- (void) acceptMarkVisitor:(id <MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
+
 @end
