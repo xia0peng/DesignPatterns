@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ImageComponent <NSObject>
 
+// https://www.jianshu.com/p/fe1cc2978a1d
 // 我们要截获 UIImage 的行为，插入附加行为
 @optional
 
