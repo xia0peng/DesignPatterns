@@ -41,6 +41,15 @@
 		9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7DB22F87AF7004F090B /* CanvasView.m */; };
 		9A6CD7E422F90F91004F090B /* UIImage+ImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7E322F90F91004F090B /* UIImage+ImageComponent.m */; };
 		9A6CD7E722F90FE0004F090B /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7E622F90FE0004F090B /* ImageFilter.m */; };
+		9A6CD7EB22FA5CA1004F090B /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7EA22FA5CA1004F090B /* Attack.m */; };
+		9A6CD7EE22FA5CB7004F090B /* AttackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7ED22FA5CB7004F090B /* AttackHandler.m */; };
+		9A6CD7F122FA5F87004F090B /* MetalArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7F022FA5F87004F090B /* MetalArmor.m */; };
+		9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7F322FA5FB4004F090B /* SwordAttack.m */; };
+		9A6CD7F722FA60C2004F090B /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7F622FA60C2004F090B /* MagicFireAttack.m */; };
+		9A6CD7FA22FA60D5004F090B /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7F922FA60D5004F090B /* LightningAttack.m */; };
+		9A6CD7FD22FA6103004F090B /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FC22FA6103004F090B /* CrystalShield.m */; };
+		9A6CD80022FA6110004F090B /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FF22FA6110004F090B /* Avatar.m */; };
+		9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD80222FA7126004F090B /* BusinessObject.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -126,6 +135,24 @@
 		9A6CD7E322F90F91004F090B /* UIImage+ImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageComponent.m"; sourceTree = "<group>"; };
 		9A6CD7E522F90FE0004F090B /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
 		9A6CD7E622F90FE0004F090B /* ImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		9A6CD7E922FA5CA1004F090B /* Attack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		9A6CD7EA22FA5CA1004F090B /* Attack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		9A6CD7EC22FA5CB7004F090B /* AttackHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttackHandler.h; sourceTree = "<group>"; };
+		9A6CD7ED22FA5CB7004F090B /* AttackHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttackHandler.m; sourceTree = "<group>"; };
+		9A6CD7EF22FA5F87004F090B /* MetalArmor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalArmor.h; sourceTree = "<group>"; };
+		9A6CD7F022FA5F87004F090B /* MetalArmor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalArmor.m; sourceTree = "<group>"; };
+		9A6CD7F222FA5FB4004F090B /* SwordAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwordAttack.h; sourceTree = "<group>"; };
+		9A6CD7F322FA5FB4004F090B /* SwordAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwordAttack.m; sourceTree = "<group>"; };
+		9A6CD7F522FA60C2004F090B /* MagicFireAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicFireAttack.h; sourceTree = "<group>"; };
+		9A6CD7F622FA60C2004F090B /* MagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
+		9A6CD7F822FA60D5004F090B /* LightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
+		9A6CD7F922FA60D5004F090B /* LightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		9A6CD7FB22FA6103004F090B /* CrystalShield.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrystalShield.h; sourceTree = "<group>"; };
+		9A6CD7FC22FA6103004F090B /* CrystalShield.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalShield.m; sourceTree = "<group>"; };
+		9A6CD7FE22FA6110004F090B /* Avatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		9A6CD7FF22FA6110004F090B /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		9A6CD80122FA7126004F090B /* BusinessObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessObject.h; sourceTree = "<group>"; };
+		9A6CD80222FA7126004F090B /* BusinessObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessObject.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +297,7 @@
 			children = (
 				9A6CD7D522F8764D004F090B /* 访问者 */,
 				9A6CD7DE22F90B51004F090B /* 装饰 */,
+				9A6CD7E822FA5A55004F090B /* 责任链 */,
 			);
 			path = "行为扩展";
 			sourceTree = "<group>";
@@ -460,6 +488,31 @@
 			path = "装饰";
 			sourceTree = "<group>";
 		};
+		9A6CD7E822FA5A55004F090B /* 责任链 */ = {
+			isa = PBXGroup;
+			children = (
+				9A6CD7EC22FA5CB7004F090B /* AttackHandler.h */,
+				9A6CD7ED22FA5CB7004F090B /* AttackHandler.m */,
+				9A6CD7EF22FA5F87004F090B /* MetalArmor.h */,
+				9A6CD7F022FA5F87004F090B /* MetalArmor.m */,
+				9A6CD7FB22FA6103004F090B /* CrystalShield.h */,
+				9A6CD7FC22FA6103004F090B /* CrystalShield.m */,
+				9A6CD7FE22FA6110004F090B /* Avatar.h */,
+				9A6CD7FF22FA6110004F090B /* Avatar.m */,
+				9A6CD7E922FA5CA1004F090B /* Attack.h */,
+				9A6CD7EA22FA5CA1004F090B /* Attack.m */,
+				9A6CD7F222FA5FB4004F090B /* SwordAttack.h */,
+				9A6CD7F322FA5FB4004F090B /* SwordAttack.m */,
+				9A6CD7F522FA60C2004F090B /* MagicFireAttack.h */,
+				9A6CD7F622FA60C2004F090B /* MagicFireAttack.m */,
+				9A6CD7F822FA60D5004F090B /* LightningAttack.h */,
+				9A6CD7F922FA60D5004F090B /* LightningAttack.m */,
+				9A6CD80122FA7126004F090B /* BusinessObject.h */,
+				9A6CD80222FA7126004F090B /* BusinessObject.m */,
+			);
+			path = "责任链";
+			sourceTree = "<group>";
+		};
 		E25EED18D9061280036FF302 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,21 +677,30 @@
 				9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
 				9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */,
+				9A6CD80022FA6110004F090B /* Avatar.m in Sources */,
 				9A6CD4AF22F7F6BE004F090B /* ChasingGame.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
 				9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9A6CD7FD22FA6103004F090B /* CrystalShield.m in Sources */,
 				9A6CD4C222F7F717004F090B /* CommandSlider.m in Sources */,
 				9A6CD4D122F7F7D2004F090B /* Dot.m in Sources */,
 				9A6CD7D922F876DA004F090B /* MarkRenderer.m in Sources */,
 				9A6CD4C022F7F717004F090B /* Command.m in Sources */,
+				9A6CD7FA22FA60D5004F090B /* LightningAttack.m in Sources */,
 				9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */,
 				9A6CD7E722F90FE0004F090B /* ImageFilter.m in Sources */,
+				9A6CD7F722FA60C2004F090B /* MagicFireAttack.m in Sources */,
+				9A6CD7EB22FA5CA1004F090B /* Attack.m in Sources */,
 				9A6CD4C322F7F717004F090B /* PaletteViewController.m in Sources */,
+				9A6CD7EE22FA5CB7004F090B /* AttackHandler.m in Sources */,
+				9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
 				9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */,
+				9A6CD7F122FA5F87004F090B /* MetalArmor.m in Sources */,
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
+				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
 				9A6CD4B322F7F6BE004F090B /* XPWann.m in Sources */,
 				9A6CD4D322F7F7D2004F090B /* Stroke.m in Sources */,

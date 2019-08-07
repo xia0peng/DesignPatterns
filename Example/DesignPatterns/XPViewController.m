@@ -32,6 +32,15 @@
 // 访问者
 #import "CanvasView.h"
 
+// 责任链
+#import "AttackHandler.h"
+#import "MetalArmor.h"
+#import "Avatar.h"
+#import "CrystalShield.h"
+#import "SwordAttack.h"
+#import "MagicFireAttack.h"
+#import "LightningAttack.h"
+
 @interface XPViewController ()
 
 @end
@@ -50,6 +59,8 @@
     [self iterator];
     
     [self visitor];
+    
+    [self chainOfResponsibility];
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,12 +140,12 @@
     id <XPIteratorMark> childMark;
     // 获取下一个需要遍历的元素
     while (childMark = [enumerator nextObject]) {
-        NSLog(@"--%@", childMark);
+        NSLog(@"迭代器--%@", childMark);
     }
     
     //
     [stroke enumerateMarksUsingBlock:^(id<XPIteratorMark>  _Nonnull item, BOOL * _Nonnull stop) {
-        NSLog(@"--%@",item);
+        NSLog(@"迭代器--%@",item);
     }];
 }
 
@@ -158,6 +169,41 @@
     CanvasView *aCanvasView = [[CanvasView alloc] initWithFrame:aFrame];
     aCanvasView.mark = stroke;
     [self.view addSubview:aCanvasView];
+}
+
+#pragma mark - 装饰
+
+#pragma mark - 责任链
+
+/*
+ * 有多个对象可以处理请求，而处理程序只有在运行时才能确定
+ * 向一组对象发出请求，而不想显式指定处理请求的特定处理程序
+ */
+- (void)chainOfResponsibility {
+    // 创建新的人物
+    AttackHandler *avatar = [[Avatar alloc] init];
+    
+    // 让他穿上金属盔甲
+    AttackHandler *metalArmoredAvatar = [[MetalArmor alloc] init];
+    metalArmoredAvatar.nextAttackHandler = avatar;
+    
+    // 然后给金属盔甲中的任务增加一个水晶盾牌
+    AttackHandler *superAvatar = [[CrystalShield alloc] init];
+    superAvatar.nextAttackHandler = metalArmoredAvatar;
+    
+    // 其他行动
+    
+    // 用剑⚔攻击人物
+    Attack *swordAttack = [[SwordAttack alloc] init];
+    [superAvatar handleAttak:swordAttack];
+    
+    // 用魔法火焰🔥攻击人物
+    Attack * magicFireAttack = [[MagicFireAttack alloc] init];
+    [superAvatar handleAttak:magicFireAttack];
+
+    // 用闪电⚡️进行新的攻击
+    Attack *lightningAttack = [[LightningAttack alloc] init];
+    [superAvatar handleAttak:lightningAttack];
 }
 
 @end
