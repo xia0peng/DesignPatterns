@@ -9,27 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-## Installation
-
-DesignPatterns is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'DesignPatterns'
-```
-
 ## Author
 
-xiaopengwang, xiaopengmonsters@gmail.com
+xiaopengwang, xiaopeng__w@163.com
 
 ## License
 
 DesignPatterns is available under the MIT license. See the LICENSE file for more info.
 
-## 适配器
+## 责任链
+![image](http://github.com/xiaopengmonsters/DesignPatterns/images/责任链.png)
 
-### 类适配器的类图
-
-### 对象适配器的类图
