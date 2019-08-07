@@ -18,5 +18,5 @@ xiaopengwang, xiaopeng__w@163.com
 DesignPatterns is available under the MIT license. See the LICENSE file for more info.
 
 ## 责任链
-![image](http://github.com/xiaopengmonsters/DesignPatterns/images/责任链.png)
+![image](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/责任链.png)
 
