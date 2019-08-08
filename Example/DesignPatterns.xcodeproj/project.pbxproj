@@ -50,6 +50,8 @@
 		9A6CD7FD22FA6103004F090B /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FC22FA6103004F090B /* CrystalShield.m */; };
 		9A6CD80022FA6110004F090B /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FF22FA6110004F090B /* Avatar.m */; };
 		9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD80222FA7126004F090B /* BusinessObject.m */; };
+		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
+		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -153,6 +155,10 @@
 		9A6CD7FF22FA6110004F090B /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		9A6CD80122FA7126004F090B /* BusinessObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessObject.h; sourceTree = "<group>"; };
 		9A6CD80222FA7126004F090B /* BusinessObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessObject.m; sourceTree = "<group>"; };
+		9AAA508822FBAAA700CBFE6E /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
+		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
+		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
+		9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReubenSandwich.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +311,7 @@
 		9A6CD49D22F7F552004F090B /* 算法封装 */ = {
 			isa = PBXGroup;
 			children = (
+				9AAA508722FBAA7200CBFE6E /* 模板 */,
 			);
 			path = "算法封装";
 			sourceTree = "<group>";
@@ -513,6 +520,17 @@
 			path = "责任链";
 			sourceTree = "<group>";
 		};
+		9AAA508722FBAA7200CBFE6E /* 模板 */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA508822FBAAA700CBFE6E /* AnySandwich.h */,
+				9AAA508922FBAAA700CBFE6E /* AnySandwich.m */,
+				9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */,
+				9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */,
+			);
+			path = "模板";
+			sourceTree = "<group>";
+		};
 		E25EED18D9061280036FF302 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6CD7E422F90F91004F090B /* UIImage+ImageComponent.m in Sources */,
+				9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */,
 				9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
 				9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */,
@@ -688,6 +707,7 @@
 				9A6CD7D922F876DA004F090B /* MarkRenderer.m in Sources */,
 				9A6CD4C022F7F717004F090B /* Command.m in Sources */,
 				9A6CD7FA22FA60D5004F090B /* LightningAttack.m in Sources */,
+				9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */,
 				9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */,
 				9A6CD7E722F90FE0004F090B /* ImageFilter.m in Sources */,
 				9A6CD7F722FA60C2004F090B /* MagicFireAttack.m in Sources */,
