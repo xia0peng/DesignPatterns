@@ -50,6 +50,9 @@
 		9A6CD7FD22FA6103004F090B /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FC22FA6103004F090B /* CrystalShield.m */; };
 		9A6CD80022FA6110004F090B /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD7FF22FA6110004F090B /* Avatar.m */; };
 		9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CD80222FA7126004F090B /* BusinessObject.m */; };
+		9A95A8A122FF00930048870C /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A022FF00930048870C /* ScribbleMemento.m */; };
+		9A95A8A522FF09EE0048870C /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A422FF09EE0048870C /* Scribble.m */; };
+		9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A722FFF51A0048870C /* ScribbleManager.m */; };
 		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
@@ -155,6 +158,13 @@
 		9A6CD7FF22FA6110004F090B /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		9A6CD80122FA7126004F090B /* BusinessObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessObject.h; sourceTree = "<group>"; };
 		9A6CD80222FA7126004F090B /* BusinessObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessObject.m; sourceTree = "<group>"; };
+		9A95A89F22FF00930048870C /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		9A95A8A022FF00930048870C /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		9A95A8A222FF06C00048870C /* ScribbleMemento+Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		9A95A8A322FF09EE0048870C /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		9A95A8A422FF09EE0048870C /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		9A95A8A622FFF51A0048870C /* ScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		9A95A8A722FFF51A0048870C /* ScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
 		9AAA508822FBAAA700CBFE6E /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
 		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
 		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
@@ -239,7 +249,7 @@
 				9A6CD49C22F7F53F004F090B /* 行为扩展 */,
 				9A6CD49D22F7F552004F090B /* 算法封装 */,
 				9A6CD49E22F7F584004F090B /* 性能与对象访问 */,
-				9A6CD49F22F7F59D004F090B /* 对象状态 */,
+				9A95A89D22FEAE720048870C /* 对象状态 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DesignPatterns";
@@ -321,13 +331,6 @@
 			children = (
 			);
 			path = "性能与对象访问";
-			sourceTree = "<group>";
-		};
-		9A6CD49F22F7F59D004F090B /* 对象状态 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "对象状态";
 			sourceTree = "<group>";
 		};
 		9A6CD4A022F7F6BE004F090B /* 对象创建 */ = {
@@ -518,6 +521,28 @@
 				9A6CD80222FA7126004F090B /* BusinessObject.m */,
 			);
 			path = "责任链";
+			sourceTree = "<group>";
+		};
+		9A95A89D22FEAE720048870C /* 对象状态 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A89E22FEAE720048870C /* 备忘录 */,
+			);
+			path = "对象状态";
+			sourceTree = "<group>";
+		};
+		9A95A89E22FEAE720048870C /* 备忘录 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A89F22FF00930048870C /* ScribbleMemento.h */,
+				9A95A8A022FF00930048870C /* ScribbleMemento.m */,
+				9A95A8A222FF06C00048870C /* ScribbleMemento+Friend.h */,
+				9A95A8A322FF09EE0048870C /* Scribble.h */,
+				9A95A8A422FF09EE0048870C /* Scribble.m */,
+				9A95A8A622FFF51A0048870C /* ScribbleManager.h */,
+				9A95A8A722FFF51A0048870C /* ScribbleManager.m */,
+			);
+			path = "备忘录";
 			sourceTree = "<group>";
 		};
 		9AAA508722FBAA7200CBFE6E /* 模板 */ = {
@@ -716,10 +741,13 @@
 				9A6CD7EE22FA5CB7004F090B /* AttackHandler.m in Sources */,
 				9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
+				9A95A8A122FF00930048870C /* ScribbleMemento.m in Sources */,
 				9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */,
 				9A6CD7F122FA5F87004F090B /* MetalArmor.m in Sources */,
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
+				9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */,
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
+				9A95A8A522FF09EE0048870C /* Scribble.m in Sources */,
 				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
 				9A6CD4B322F7F6BE004F090B /* XPWann.m in Sources */,
