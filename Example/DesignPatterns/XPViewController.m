@@ -41,6 +41,10 @@
 #import "MagicFireAttack.h"
 #import "LightningAttack.h"
 
+// 备忘录
+#import "ScribbleManager.h"
+#import "Scribble.h"
+
 @interface XPViewController ()
 
 @end
@@ -61,6 +65,8 @@
     [self visitor];
     
     [self chainOfResponsibility];
+    
+    [self memento];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +74,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - - - - - 对象创建 - - - -
 
 #pragma mark - 单利
 
@@ -96,7 +104,7 @@
     [command execute];
 }
 
-#pragma mark - 抽象集合
+#pragma mark - - - - - 抽象集合 - - - - -
 
 #pragma mark - 组合
 
@@ -149,7 +157,7 @@
     }];
 }
 
-#pragma mark - 行为扩展
+#pragma mark - - - - - 行为扩展 - - - -
 
 #pragma mark - 访问者
 
@@ -171,7 +179,7 @@
     [self.view addSubview:aCanvasView];
 }
 
-#pragma mark - 装饰
+#pragma mark - - - - - 装饰 - - - -
 
 #pragma mark - 责任链
 
@@ -206,4 +214,29 @@
     [superAvatar handleAttak:lightningAttack];
 }
 
+#pragma mark - - - - - 性能与对象访问 - - - - -
+
+#pragma mark - 代理
+
+/*
+ * 远程代理，为位于不同地址空间或网络中的对象提供本地代表。
+ * 虚拟代理，来根据要求创建重型的对象。
+ * 保护代理，来根据不同访问权限控制对原对象的访问。
+ * 只能引用代理，通过对实体对象的引用进行计数来管理内存，也能用于锁定实体对象，让其对象不能修改它。
+ */
+
+#pragma mark - - - - - 对象状态 - - - - -
+
+#pragma mark - 备忘录
+
+/*
+ * 需要保存一个对象（或某部分）在某一个时刻的状态，这样以后就可以恢复到先前的状态
+ * 用于获取状态的接口会暴露实现细节，需要将其隐藏起来
+ */
+- (void)memento {
+    Scribble *newScribble = [[Scribble alloc] init];
+    ScribbleManager *manager = [[ScribbleManager alloc] init];
+    
+    [manager saveScribble:newScribble thumbnail:[UIImage imageNamed:@""]];
+}
 @end

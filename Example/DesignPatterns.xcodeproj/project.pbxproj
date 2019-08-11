@@ -53,6 +53,8 @@
 		9A95A8A122FF00930048870C /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A022FF00930048870C /* ScribbleMemento.m */; };
 		9A95A8A522FF09EE0048870C /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A422FF09EE0048870C /* Scribble.m */; };
 		9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A722FFF51A0048870C /* ScribbleManager.m */; };
+		9A95A8AD23006CD10048870C /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8AC23006CD10048870C /* ScribbleThumbnailView.m */; };
+		9A95A8B023006E150048870C /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */; };
 		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
@@ -165,6 +167,10 @@
 		9A95A8A422FF09EE0048870C /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
 		9A95A8A622FFF51A0048870C /* ScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
 		9A95A8A722FFF51A0048870C /* ScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
+		9A95A8AB23006CD10048870C /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScribbleThumbnailView.h; path = "DesignPatterns/对象状态/备忘录/ScribbleThumbnailView.h"; sourceTree = SOURCE_ROOT; };
+		9A95A8AC23006CD10048870C /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnailView.m; path = "DesignPatterns/对象状态/备忘录/ScribbleThumbnailView.m"; sourceTree = SOURCE_ROOT; };
+		9A95A8AE23006E150048870C /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
 		9AAA508822FBAAA700CBFE6E /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
 		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
 		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
@@ -248,7 +254,7 @@
 				9A6CD49A22F7F51B004F090B /* 抽象集合 */,
 				9A6CD49C22F7F53F004F090B /* 行为扩展 */,
 				9A6CD49D22F7F552004F090B /* 算法封装 */,
-				9A6CD49E22F7F584004F090B /* 性能与对象访问 */,
+				9A95A8A923006C420048870C /* 性能与对象访问 */,
 				9A95A89D22FEAE720048870C /* 对象状态 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -324,13 +330,6 @@
 				9AAA508722FBAA7200CBFE6E /* 模板 */,
 			);
 			path = "算法封装";
-			sourceTree = "<group>";
-		};
-		9A6CD49E22F7F584004F090B /* 性能与对象访问 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "性能与对象访问";
 			sourceTree = "<group>";
 		};
 		9A6CD4A022F7F6BE004F090B /* 对象创建 */ = {
@@ -545,6 +544,25 @@
 			path = "备忘录";
 			sourceTree = "<group>";
 		};
+		9A95A8A923006C420048870C /* 性能与对象访问 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A8AA23006C420048870C /* 代理 */,
+			);
+			path = "性能与对象访问";
+			sourceTree = "<group>";
+		};
+		9A95A8AA23006C420048870C /* 代理 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A8AB23006CD10048870C /* ScribbleThumbnailView.h */,
+				9A95A8AC23006CD10048870C /* ScribbleThumbnailView.m */,
+				9A95A8AE23006E150048870C /* ScribbleThumbnailViewImageProxy.h */,
+				9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */,
+			);
+			path = "代理";
+			sourceTree = "<group>";
+		};
 		9AAA508722FBAA7200CBFE6E /* 模板 */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +756,7 @@
 				9A6CD7F722FA60C2004F090B /* MagicFireAttack.m in Sources */,
 				9A6CD7EB22FA5CA1004F090B /* Attack.m in Sources */,
 				9A6CD4C322F7F717004F090B /* PaletteViewController.m in Sources */,
+				9A95A8B023006E150048870C /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				9A6CD7EE22FA5CB7004F090B /* AttackHandler.m in Sources */,
 				9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
@@ -752,6 +771,7 @@
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
 				9A6CD4B322F7F6BE004F090B /* XPWann.m in Sources */,
 				9A6CD4D322F7F7D2004F090B /* Stroke.m in Sources */,
+				9A95A8AD23006CD10048870C /* ScribbleThumbnailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
