@@ -55,6 +55,8 @@
 		9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8A722FFF51A0048870C /* ScribbleManager.m */; };
 		9A95A8AD23006CD10048870C /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8AC23006CD10048870C /* ScribbleThumbnailView.m */; };
 		9A95A8B023006E150048870C /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */; };
+		9A95A8B423030AED0048870C /* FlowerFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */; };
+		9A95A8B723030B830048870C /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8B623030B830048870C /* FlowerView.m */; };
 		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
@@ -171,6 +173,10 @@
 		9A95A8AC23006CD10048870C /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ScribbleThumbnailView.m; path = "DesignPatterns/对象状态/备忘录/ScribbleThumbnailView.m"; sourceTree = SOURCE_ROOT; };
 		9A95A8AE23006E150048870C /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
 		9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		9A95A8B223030AED0048870C /* FlowerFlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFlyweightFactory.h; sourceTree = "<group>"; };
+		9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFlyweightFactory.m; sourceTree = "<group>"; };
+		9A95A8B523030B830048870C /* FlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		9A95A8B623030B830048870C /* FlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
 		9AAA508822FBAAA700CBFE6E /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
 		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
 		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
@@ -547,6 +553,7 @@
 		9A95A8A923006C420048870C /* 性能与对象访问 */ = {
 			isa = PBXGroup;
 			children = (
+				9A95A8B12302FF940048870C /* 亨元 */,
 				9A95A8AA23006C420048870C /* 代理 */,
 			);
 			path = "性能与对象访问";
@@ -561,6 +568,17 @@
 				9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */,
 			);
 			path = "代理";
+			sourceTree = "<group>";
+		};
+		9A95A8B12302FF940048870C /* 亨元 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95A8B223030AED0048870C /* FlowerFlyweightFactory.h */,
+				9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */,
+				9A95A8B523030B830048870C /* FlowerView.h */,
+				9A95A8B623030B830048870C /* FlowerView.m */,
+			);
+			path = "亨元";
 			sourceTree = "<group>";
 		};
 		9AAA508722FBAA7200CBFE6E /* 模板 */ = {
@@ -767,9 +785,11 @@
 				9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */,
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
 				9A95A8A522FF09EE0048870C /* Scribble.m in Sources */,
+				9A95A8B723030B830048870C /* FlowerView.m in Sources */,
 				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
 				9A6CD4B322F7F6BE004F090B /* XPWann.m in Sources */,
+				9A95A8B423030AED0048870C /* FlowerFlyweightFactory.m in Sources */,
 				9A6CD4D322F7F7D2004F090B /* Stroke.m in Sources */,
 				9A95A8AD23006CD10048870C /* ScribbleThumbnailView.m in Sources */,
 			);

@@ -41,6 +41,9 @@
 #import "MagicFireAttack.h"
 #import "LightningAttack.h"
 
+// 亨元
+#import "FlowerFlyweightFactory.h"
+
 // 备忘录
 #import "ScribbleManager.h"
 #import "Scribble.h"
@@ -56,17 +59,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self builder];
+//    [self builder];
+//
+//    [self adapter];
+//
+//    [self iterator];
+//
+//    [self visitor];
+//
+//    [self chainOfResponsibility];
+//
+//    [self memento];
     
-    [self adapter];
-    
-    [self iterator];
-    
-    [self visitor];
-    
-    [self chainOfResponsibility];
-    
-    [self memento];
+    [self flyweight];
 }
 
 - (void)didReceiveMemoryWarning
@@ -215,6 +220,45 @@
 }
 
 #pragma mark - - - - - 性能与对象访问 - - - - -
+
+#pragma mark - 亨元
+
+- (void)flyweight {
+    FlowerFlyweightFactory *factory = [FlowerFlyweightFactory new];
+    NSMutableArray *flowerList = [NSMutableArray arrayWithCapacity:500];
+    
+    for (int i=0; i<500; i++) {
+        
+        // 使用随机花朵类型
+        FlowerType type = arc4random() % kTotalNumberOfFlowerType;
+        UIView *flowerView = [factory flowerViewWithType:type];
+        
+        // 设置花朵的显示位置和区域
+        CGRect scressBounds = [[UIScreen mainScreen] bounds];
+        CGFloat x = arc4random() % (NSInteger)scressBounds.size.width;
+        CGFloat y = arc4random() % (NSInteger)scressBounds.size.height;
+        NSInteger minSize = 10;
+        NSInteger maxSize = 50;
+        CGFloat size = (arc4random() & (maxSize - minSize + 1)) +minSize;
+        
+        // 把花朵的属性赋给一个外在状态对象
+        ExtrinesicFlowerState extrinesicState;
+        extrinesicState.flowerView = flowerView;
+        extrinesicState.area = CGRectMake(x, y, size, size);
+        
+        [flowerList addObject:[NSValue value:&extrinesicState withObjCType:@encode(ExtrinesicFlowerState)]];
+    }
+    
+//    for (NSValue *stateValue in flowerList) {
+//        ExtrinesicFlowerState state;
+//        [stateValue getValue:&state];
+//
+//        UIView *flowerView = state.flowerView;
+//        CGRect area = state.area;
+//
+//        [flowerView drawRect:area];
+//    }
+}
 
 #pragma mark - 代理
 
