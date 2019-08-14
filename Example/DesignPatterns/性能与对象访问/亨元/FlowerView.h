@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FlowerView : UIImageView
 
-- (void)drawRect:(CGRect)rect;
-
 @end
 
 NS_ASSUME_NONNULL_END

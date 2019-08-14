@@ -43,6 +43,8 @@
 
 // 亨元
 #import "FlowerFlyweightFactory.h"
+#import "FlyweightView.h"
+#import "FlyweightMode.h"
 
 // 备忘录
 #import "ScribbleManager.h"
@@ -227,6 +229,9 @@
     FlowerFlyweightFactory *factory = [FlowerFlyweightFactory new];
     NSMutableArray *flowerList = [NSMutableArray arrayWithCapacity:500];
     
+    FlyweightView *flyweightView = [[FlyweightView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:flyweightView];
+    
     for (int i=0; i<500; i++) {
         
         // 使用随机花朵类型
@@ -242,22 +247,23 @@
         CGFloat size = (arc4random() & (maxSize - minSize + 1)) +minSize;
         
         // 把花朵的属性赋给一个外在状态对象
-        ExtrinesicFlowerState extrinesicState;
-        extrinesicState.flowerView = flowerView;
-        extrinesicState.area = CGRectMake(x, y, size, size);
+//        ExtrinesicFlowerState extrinesicState = {
+//            flowerView,
+//            CGRectMake(x, y, size, size)
+//        };
+
+//        [flowerList addObject:[NSValue value:&extrinesicState withObjCType:@encode(ExtrinesicFlowerState)]];
+
+        FlyweightMode *mode = [[FlyweightMode alloc] init];
+        mode.flowerView = flowerView;
+        mode.area = CGRectMake(x, y, size, size);
         
-        [flowerList addObject:[NSValue value:&extrinesicState withObjCType:@encode(ExtrinesicFlowerState)]];
+        [flowerList addObject:mode];
+
     }
     
-//    for (NSValue *stateValue in flowerList) {
-//        ExtrinesicFlowerState state;
-//        [stateValue getValue:&state];
-//
-//        UIView *flowerView = state.flowerView;
-//        CGRect area = state.area;
-//
-//        [flowerView drawRect:area];
-//    }
+//    [(FlyweightView *)self.view setFlowerList:flowerList];
+    [flyweightView setFlowerList:flowerList.copy];
 }
 
 #pragma mark - 代理

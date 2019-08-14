@@ -59,6 +59,8 @@
 		9A95A8B723030B830048870C /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8B623030B830048870C /* FlowerView.m */; };
 		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
+		9AAA81042303F67600CBFE6E /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA81032303F67600CBFE6E /* FlyweightView.m */; };
+		9AAA8107230405CD00CBFE6E /* FlyweightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA8106230405CD00CBFE6E /* FlyweightMode.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -181,6 +183,10 @@
 		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
 		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
 		9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReubenSandwich.m; sourceTree = "<group>"; };
+		9AAA81022303F67600CBFE6E /* FlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		9AAA81032303F67600CBFE6E /* FlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		9AAA8105230405CD00CBFE6E /* FlyweightMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightMode.h; sourceTree = "<group>"; };
+		9AAA8106230405CD00CBFE6E /* FlyweightMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightMode.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -573,10 +579,14 @@
 		9A95A8B12302FF940048870C /* 亨元 */ = {
 			isa = PBXGroup;
 			children = (
+				9AAA81022303F67600CBFE6E /* FlyweightView.h */,
+				9AAA81032303F67600CBFE6E /* FlyweightView.m */,
 				9A95A8B223030AED0048870C /* FlowerFlyweightFactory.h */,
 				9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */,
 				9A95A8B523030B830048870C /* FlowerView.h */,
 				9A95A8B623030B830048870C /* FlowerView.m */,
+				9AAA8105230405CD00CBFE6E /* FlyweightMode.h */,
+				9AAA8106230405CD00CBFE6E /* FlyweightMode.m */,
 			);
 			path = "亨元";
 			sourceTree = "<group>";
@@ -756,6 +766,7 @@
 				9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */,
 				9A6CD4D222F7F7D2004F090B /* Vertex.m in Sources */,
 				6003F59E195388D20070C39A /* XPAppDelegate.m in Sources */,
+				9AAA8107230405CD00CBFE6E /* FlyweightMode.m in Sources */,
 				9A6CD4D922F7FBEF004F090B /* XPMarkEnumerator.m in Sources */,
 				9A6CD80022FA6110004F090B /* Avatar.m in Sources */,
 				9A6CD4AF22F7F6BE004F090B /* ChasingGame.m in Sources */,
@@ -779,6 +790,7 @@
 				9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
 				9A95A8A122FF00930048870C /* ScribbleMemento.m in Sources */,
+				9AAA81042303F67600CBFE6E /* FlyweightView.m in Sources */,
 				9A6CD7DC22F87AF7004F090B /* CanvasView.m in Sources */,
 				9A6CD7F122FA5F87004F090B /* MetalArmor.m in Sources */,
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
