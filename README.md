@@ -17,6 +17,16 @@ xiaopengwang, xiaopeng__w@163.com
 
 DesignPatterns is available under the MIT license. See the LICENSE file for more info.
 
+## 对象创建
+
+### 工厂方法
+
+何时使用工厂方法
+
+* 编译时无法准确预期要k创建的对象的类
+* 类想让子类决定在运行时创建什么
+* 若有若干辅助类为其子类，而你想将返回哪个子类这一信息局部化
+
 ## 行为扩展
 
 ### 责任链

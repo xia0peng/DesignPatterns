@@ -57,6 +57,9 @@
 		9A95A8B023006E150048870C /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8AF23006E150048870C /* ScribbleThumbnailViewImageProxy.m */; };
 		9A95A8B423030AED0048870C /* FlowerFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */; };
 		9A95A8B723030B830048870C /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95A8B623030B830048870C /* FlowerView.m */; };
+		9A95AB5623127F120048870C /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95AB5523127F120048870C /* PaperCanvasView.m */; };
+		9A95AB5923127FF00048870C /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95AB5823127FF00048870C /* ClothCanvasView.m */; };
+		9A95AB5C231280680048870C /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95AB5B231280680048870C /* CanvasViewGenerator.m */; };
 		9AAA508A22FBAAA700CBFE6E /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508922FBAAA700CBFE6E /* AnySandwich.m */; };
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		9AAA81042303F67600CBFE6E /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA81032303F67600CBFE6E /* FlyweightView.m */; };
@@ -179,6 +182,12 @@
 		9A95A8B323030AED0048870C /* FlowerFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFlyweightFactory.m; sourceTree = "<group>"; };
 		9A95A8B523030B830048870C /* FlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
 		9A95A8B623030B830048870C /* FlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		9A95AB5423127F120048870C /* PaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
+		9A95AB5523127F120048870C /* PaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasView.m; sourceTree = "<group>"; };
+		9A95AB5723127FF00048870C /* ClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasView.h; sourceTree = "<group>"; };
+		9A95AB5823127FF00048870C /* ClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasView.m; sourceTree = "<group>"; };
+		9A95AB5A231280680048870C /* CanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewGenerator.h; sourceTree = "<group>"; };
+		9A95AB5B231280680048870C /* CanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
 		9AAA508822FBAAA700CBFE6E /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
 		9AAA508922FBAAA700CBFE6E /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
 		9AAA508B22FBACA000CBFE6E /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
@@ -347,19 +356,12 @@
 		9A6CD4A022F7F6BE004F090B /* 对象创建 */ = {
 			isa = PBXGroup;
 			children = (
-				9A6CD4AE22F7F6BE004F090B /* 工厂 */,
-				9A6CD4A122F7F6BE004F090B /* 抽象工厂 */,
+				9A95AB5223127EB90048870C /* 工厂 */,
+				9A95AB5323127EC40048870C /* 抽象工厂 */,
 				9A6CD4A222F7F6BE004F090B /* 生成器 */,
 				9A6CD4AB22F7F6BE004F090B /* 单利 */,
 			);
 			path = "对象创建";
-			sourceTree = "<group>";
-		};
-		9A6CD4A122F7F6BE004F090B /* 抽象工厂 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "抽象工厂";
 			sourceTree = "<group>";
 		};
 		9A6CD4A222F7F6BE004F090B /* 生成器 */ = {
@@ -384,13 +386,6 @@
 				9A6CD4AD22F7F6BE004F090B /* XPWann.m */,
 			);
 			path = "单利";
-			sourceTree = "<group>";
-		};
-		9A6CD4AE22F7F6BE004F090B /* 工厂 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "工厂";
 			sourceTree = "<group>";
 		};
 		9A6CD4B422F7F717004F090B /* 接口适配 */ = {
@@ -591,6 +586,26 @@
 			path = "亨元";
 			sourceTree = "<group>";
 		};
+		9A95AB5223127EB90048870C /* 工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				9A95AB5423127F120048870C /* PaperCanvasView.h */,
+				9A95AB5523127F120048870C /* PaperCanvasView.m */,
+				9A95AB5723127FF00048870C /* ClothCanvasView.h */,
+				9A95AB5823127FF00048870C /* ClothCanvasView.m */,
+				9A95AB5A231280680048870C /* CanvasViewGenerator.h */,
+				9A95AB5B231280680048870C /* CanvasViewGenerator.m */,
+			);
+			path = "工厂";
+			sourceTree = "<group>";
+		};
+		9A95AB5323127EC40048870C /* 抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "抽象工厂";
+			sourceTree = "<group>";
+		};
 		9AAA508722FBAA7200CBFE6E /* 模板 */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,6 +787,7 @@
 				9A6CD4AF22F7F6BE004F090B /* ChasingGame.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
 				9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */,
+				9A95AB5C231280680048870C /* CanvasViewGenerator.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9A6CD7FD22FA6103004F090B /* CrystalShield.m in Sources */,
 				9A6CD4C222F7F717004F090B /* CommandSlider.m in Sources */,
@@ -796,12 +812,14 @@
 				9A6CD4B222F7F6BE004F090B /* Character.m in Sources */,
 				9A95A8A822FFF51A0048870C /* ScribbleManager.m in Sources */,
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
+				9A95AB5623127F120048870C /* PaperCanvasView.m in Sources */,
 				9A95A8A522FF09EE0048870C /* Scribble.m in Sources */,
 				9A95A8B723030B830048870C /* FlowerView.m in Sources */,
 				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
 				9A6CD4B322F7F6BE004F090B /* XPWann.m in Sources */,
 				9A95A8B423030AED0048870C /* FlowerFlyweightFactory.m in Sources */,
+				9A95AB5923127FF00048870C /* ClothCanvasView.m in Sources */,
 				9A6CD4D322F7F7D2004F090B /* Stroke.m in Sources */,
 				9A95A8AD23006CD10048870C /* ScribbleThumbnailView.m in Sources */,
 			);
