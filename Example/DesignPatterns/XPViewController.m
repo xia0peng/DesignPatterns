@@ -8,6 +8,9 @@
 
 #import "XPViewController.h"
 
+// 工厂
+#import "CanvasViewGenerator.h"
+
 // 单利
 #import "XPWann.h"
 
@@ -83,6 +86,21 @@
 }
 
 #pragma mark - - - - - 对象创建 - - - -
+
+#pragma mark - 工厂
+
+- (void)factory {
+    
+    CanvasViewGenerator *defaultGenerator = [CanvasViewGenerator new];
+    
+    [self loadCanvasViewWithGenerator:defaultGenerator];
+}
+
+- (void)loadCanvasViewWithGenerator:(CanvasViewGenerator *)generator {
+    
+    CanvasView *view = [generator canvasViewWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:view];
+}
 
 #pragma mark - 单利
 

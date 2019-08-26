@@ -64,6 +64,8 @@
 		9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA508C22FBACA000CBFE6E /* ReubenSandwich.m */; };
 		9AAA81042303F67600CBFE6E /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA81032303F67600CBFE6E /* FlyweightView.m */; };
 		9AAA8107230405CD00CBFE6E /* FlyweightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA8106230405CD00CBFE6E /* FlyweightMode.m */; };
+		9AB8E7CA231368990011328B /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8E7C9231368990011328B /* ClothCanvasViewGenerator.m */; };
+		9AB8E7CD231368BE0011328B /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8E7CC231368BE0011328B /* PaperCanvasViewGenerator.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -196,6 +198,10 @@
 		9AAA81032303F67600CBFE6E /* FlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
 		9AAA8105230405CD00CBFE6E /* FlyweightMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightMode.h; sourceTree = "<group>"; };
 		9AAA8106230405CD00CBFE6E /* FlyweightMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightMode.m; sourceTree = "<group>"; };
+		9AB8E7C8231368990011328B /* ClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9AB8E7C9231368990011328B /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		9AB8E7CB231368BE0011328B /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		9AB8E7CC231368BE0011328B /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -591,8 +597,12 @@
 			children = (
 				9A95AB5423127F120048870C /* PaperCanvasView.h */,
 				9A95AB5523127F120048870C /* PaperCanvasView.m */,
+				9AB8E7CB231368BE0011328B /* PaperCanvasViewGenerator.h */,
+				9AB8E7CC231368BE0011328B /* PaperCanvasViewGenerator.m */,
 				9A95AB5723127FF00048870C /* ClothCanvasView.h */,
 				9A95AB5823127FF00048870C /* ClothCanvasView.m */,
+				9AB8E7C8231368990011328B /* ClothCanvasViewGenerator.h */,
+				9AB8E7C9231368990011328B /* ClothCanvasViewGenerator.m */,
 				9A95AB5A231280680048870C /* CanvasViewGenerator.h */,
 				9A95AB5B231280680048870C /* CanvasViewGenerator.m */,
 			);
@@ -794,6 +804,7 @@
 				9A6CD4D122F7F7D2004F090B /* Dot.m in Sources */,
 				9A6CD7D922F876DA004F090B /* MarkRenderer.m in Sources */,
 				9A6CD4C022F7F717004F090B /* Command.m in Sources */,
+				9AB8E7CA231368990011328B /* ClothCanvasViewGenerator.m in Sources */,
 				9A6CD7FA22FA60D5004F090B /* LightningAttack.m in Sources */,
 				9AAA508D22FBACA000CBFE6E /* ReubenSandwich.m in Sources */,
 				9A6CD4DC22F800C4004F090B /* NSMutableArray+Stack.m in Sources */,
@@ -814,6 +825,7 @@
 				9A6CD4C122F7F717004F090B /* SetStrokeColorCommand.m in Sources */,
 				9A95AB5623127F120048870C /* PaperCanvasView.m in Sources */,
 				9A95A8A522FF09EE0048870C /* Scribble.m in Sources */,
+				9AB8E7CD231368BE0011328B /* PaperCanvasViewGenerator.m in Sources */,
 				9A95A8B723030B830048870C /* FlowerView.m in Sources */,
 				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,

@@ -19,7 +19,9 @@ DesignPatterns is available under the MIT license. See the LICENSE file for more
 
 ## 对象创建
 
-### 工厂方法
+### 工厂方法 
+
+[工厂方法模式的类图](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/工厂.png)
 
 何时使用工厂方法
 
