@@ -29,6 +29,20 @@ DesignPatterns is available under the MIT license. See the LICENSE file for more
 * 类想让子类决定在运行时创建什么
 * 若有若干辅助类为其子类，而你想将返回哪个子类这一信息局部化
 
+### 抽象工厂
+
+[一系列工厂及相关产品之间关系的类图](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/抽象工厂.png)
+
+抽象工厂与工厂方法
+
+两个模式都用于相同的目的：创建对象而不让客户端知晓返回了什么确切的具体对象
+
+|  抽象工厂 | 工厂方法 |
+|  ----  | ----  |
+| 通过对象组合创建抽象产品  | 通过类继承创建抽象产品 |
+| 创建对系列产品  | 创建一种产品 |
+| 必须修改父类的接口才能支持新产品  | 子类化创建者并重载工厂方法以创建新产品 |
+
 ## 行为扩展
 
 ### 责任链

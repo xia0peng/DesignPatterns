@@ -11,6 +11,9 @@
 // 工厂
 #import "CanvasViewGenerator.h"
 
+// 抽象工厂
+#import "BrandingFactory.h"
+
 // 单利
 #import "XPWann.h"
 
@@ -100,6 +103,16 @@
     
     CanvasView *view = [generator canvasViewWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:view];
+}
+
+#pragma mark - 抽象工厂
+
+- (void)abstractFactory {
+    
+    BrandingFactory *factory = [BrandingFactory factory];
+    
+    UIView *view = [factory brandedView];
+    NSLog(@"%@",view);
 }
 
 #pragma mark - 单利

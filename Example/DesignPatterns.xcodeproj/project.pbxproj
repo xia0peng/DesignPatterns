@@ -66,6 +66,9 @@
 		9AAA8107230405CD00CBFE6E /* FlyweightMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA8106230405CD00CBFE6E /* FlyweightMode.m */; };
 		9AB8E7CA231368990011328B /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8E7C9231368990011328B /* ClothCanvasViewGenerator.m */; };
 		9AB8E7CD231368BE0011328B /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8E7CC231368BE0011328B /* PaperCanvasViewGenerator.m */; };
+		9AB8EAF32314BA0C0011328B /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EAF22314BA0C0011328B /* BrandingFactory.m */; };
+		9AB8EAF62314BC090011328B /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EAF52314BC090011328B /* SierraBrandingFactory.m */; };
+		9AB8EAF92314BC200011328B /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EAF82314BC1F0011328B /* AcmeBrandingFactory.m */; };
 		B68780FCB80A675B5EFD463E /* Pods_DesignPatterns_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */; };
 		F3EFB858B2DEB71D378D0D7B /* Pods_DesignPatterns_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */; };
 /* End PBXBuildFile section */
@@ -202,6 +205,12 @@
 		9AB8E7C9231368990011328B /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		9AB8E7CB231368BE0011328B /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
 		9AB8E7CC231368BE0011328B /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		9AB8EAF12314BA0C0011328B /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		9AB8EAF22314BA0C0011328B /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		9AB8EAF42314BC090011328B /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		9AB8EAF52314BC090011328B /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		9AB8EAF72314BC1F0011328B /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		9AB8EAF82314BC1F0011328B /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
 		A6FAC2870D2DF10E6384AFC9 /* Pods_DesignPatterns_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4C142CDE808934D04A2B49 /* Pods-DesignPatterns_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns_Tests.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns_Tests/Pods-DesignPatterns_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D00E5D04BB3C0D7D7BB499E6 /* Pods_DesignPatterns_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignPatterns_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -612,6 +621,12 @@
 		9A95AB5323127EC40048870C /* 抽象工厂 */ = {
 			isa = PBXGroup;
 			children = (
+				9AB8EAF12314BA0C0011328B /* BrandingFactory.h */,
+				9AB8EAF22314BA0C0011328B /* BrandingFactory.m */,
+				9AB8EAF42314BC090011328B /* SierraBrandingFactory.h */,
+				9AB8EAF52314BC090011328B /* SierraBrandingFactory.m */,
+				9AB8EAF72314BC1F0011328B /* AcmeBrandingFactory.h */,
+				9AB8EAF82314BC1F0011328B /* AcmeBrandingFactory.m */,
 			);
 			path = "抽象工厂";
 			sourceTree = "<group>";
@@ -796,6 +811,7 @@
 				9A6CD80022FA6110004F090B /* Avatar.m in Sources */,
 				9A6CD4AF22F7F6BE004F090B /* ChasingGame.m in Sources */,
 				6003F5A7195388D20070C39A /* XPViewController.m in Sources */,
+				9AB8EAF32314BA0C0011328B /* BrandingFactory.m in Sources */,
 				9A6CD7D222F85841004F090B /* XPIteratorStroke.m in Sources */,
 				9A95AB5C231280680048870C /* CanvasViewGenerator.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -813,6 +829,7 @@
 				9A6CD7EB22FA5CA1004F090B /* Attack.m in Sources */,
 				9A6CD4C322F7F717004F090B /* PaletteViewController.m in Sources */,
 				9A95A8B023006E150048870C /* ScribbleThumbnailViewImageProxy.m in Sources */,
+				9AB8EAF62314BC090011328B /* SierraBrandingFactory.m in Sources */,
 				9A6CD7EE22FA5CB7004F090B /* AttackHandler.m in Sources */,
 				9A6CD7F422FA5FB4004F090B /* SwordAttack.m in Sources */,
 				9A6CD4B122F7F6BE004F090B /* CharacterBuilder.m in Sources */,
@@ -826,6 +843,7 @@
 				9A95AB5623127F120048870C /* PaperCanvasView.m in Sources */,
 				9A95A8A522FF09EE0048870C /* Scribble.m in Sources */,
 				9AB8E7CD231368BE0011328B /* PaperCanvasViewGenerator.m in Sources */,
+				9AB8EAF92314BC200011328B /* AcmeBrandingFactory.m in Sources */,
 				9A95A8B723030B830048870C /* FlowerView.m in Sources */,
 				9A6CD80322FA7126004F090B /* BusinessObject.m in Sources */,
 				9A6CD4B022F7F6BE004F090B /* StandardCharacterBuilder.m in Sources */,
