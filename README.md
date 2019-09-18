@@ -17,7 +17,9 @@ xiaopengwang, xiaopeng__w@163.com
 
 DesignPatterns is available under the MIT license. See the LICENSE file for more info.
 
-## 对象创建
+## Part 1：设计模式初体验
+
+## Part 2：对象创建
 
 ### 工厂方法 
 
@@ -43,7 +45,46 @@ DesignPatterns is available under the MIT license. See the LICENSE file for more
 | 创建对系列产品  | 创建一种产品 |
 | 必须修改父类的接口才能支持新产品  | 子类化创建者并重载工厂方法以创建新产品 |
 
-## 行为扩展
+### 生成器
+
+[生成器类图](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/生成器.png)
+
+何时使用生成器模式
+
+* 需要创建涉及各种部件的复杂对象。创建对象的算法应该独立于部件的装配方式。常见例子是构建组合对象
+* 构建过程需要以不同的方式（例如，部件或表现的不同组合）构建对象
+
+### 单利
+
+[单利模式静态结构](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/单利.png)
+
+何时使用单利模式
+
+* 类只能有一个实例，而且必须从一个为人熟知的访问点对其访问，比如工厂方法
+* 这个唯一的实例只能通过子类化进行扩展，而且扩展的对象不会破坏客户端代码
+
+## Part 3：接口适配
+
+### 适配器
+
+[类适配器的类图](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/类适配器.png)
+[对象适配器类图](https://github.com/xiaopengmonsters/DesignPatterns/blob/master/Example/images/对象适配器.png)
+
+何时使用接口适配模式
+
+* 已有类的接口与需求不匹配
+* 想要一个可复用的类，该类能够同可能带有不兼容接口的其他类协作
+* 需要适配一个类的几个不同子类，可是让每一个子类去子类化一个类适配器又不现实。那么可以使用对象适配器（也叫委托）来适配其父类的接口
+
+类适配器与对象适配器的特征对比
+
+|  类适配器 | 对象适配器 |
+|  ----  | ----  |
+|   |  |
+|   |  |
+|   |  |
+
+## Part 6：行为扩展
 
 ### 责任链
 
